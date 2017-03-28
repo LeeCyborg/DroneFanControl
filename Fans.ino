@@ -4,7 +4,7 @@ int pin2;
 
 const int fanPins [][2] = {{8, 9}, // 0 0, 0 1
                          {6, 7}, // 1 0, 1 1 
-                         {10, 11}}; // 2 0, 2 1
+                         {4,5}}; // 2 0, 2 1
                        
 
 void setup() {
@@ -15,12 +15,13 @@ void setup() {
         Serial.println(fanPins[i][j]);
      }
    }
-     fanControl(0, true);
-       fanControl(1, true);
+  fanControl(0, true);
+  fanControl(1, true);
+  fanControl(2, true);
 }
 
 void loop() {
-  fanControl(2, true);
+
 
 }
 
